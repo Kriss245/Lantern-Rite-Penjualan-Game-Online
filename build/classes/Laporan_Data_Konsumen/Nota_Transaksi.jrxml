@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="205ad7a8-5a31-4b3f-ab72-3662fad44419">
+	<property name="ireport.zoom" value="1.100000000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="211"/>
+	<parameter name="id_pembeli" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from pembeli WHERE id_pembeli = $P{id_pembeli}]]>
+	</queryString>
+	<field name="id_pembeli" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_pembeli" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status_pembeli" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="judul_game" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="genre_game" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="platform" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga_game" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="diskon_belanja" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cashback_pembelian" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="diskon_tambahan" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ppn" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total_pembayaran" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jumlah_bayar" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="uang_kembalian" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tanggal_transaksi" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="79" backcolor="#009999" uuid="def0234e-c722-4bc2-9ef5-4a8cd80f4864"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="156" y="21" width="240" height="20" uuid="52ca1400-f811-4d60-aafa-4b1fff2e0439"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOTA PEMBELIAN GAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="156" y="41" width="240" height="20" uuid="4a1ab557-6739-402b-afd0-3f439df31251"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOKO GAME "LANTERN RITE"]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="90" splitType="Stretch">
+			<staticText>
+				<reportElement x="158" y="13" width="238" height="34" uuid="f9c35bd2-7901-4c46-8c6b-cf04d3628824"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12"/>
+				</textElement>
+				<text><![CDATA[Jl. Rajawali No. 28, Ngembat Padas, Kec. Gemolong, Sragen, Jawa Tengah]]></text>
+			</staticText>
+			<line>
+				<reportElement x="158" y="47" width="238" height="1" uuid="e0f64f58-8b1e-4189-abb8-e99cd08b9383"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<textField pattern="EEEEE, dd MMMMM yyyy">
+				<reportElement x="213" y="47" width="124" height="20" uuid="93d41e60-b0ad-45a7-b535-033c124d8685"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tanggal_transaksi}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="40" splitType="Stretch">
+			<textField>
+				<reportElement x="425" y="20" width="100" height="20" uuid="9ccb9d9b-1486-489a-9fac-83a7666ac626"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_pembeli}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="25" y="20" width="145" height="20" uuid="03b76094-f63c-473a-a257-feef7d46f680"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID Transaksi 	   :]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="390" splitType="Stretch">
+			<staticText>
+				<reportElement x="25" y="22" width="145" height="20" uuid="72bab47e-0f02-43cb-b03f-f8d60e31b26d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<text><![CDATA[Nama Pembeli    	    :]]></text>
+			</staticText>
+			<line>
+				<reportElement x="25" y="11" width="500" height="1" uuid="2b030673-f3d1-40c0-91dd-9cb469d5af7c"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="25" y="42" width="145" height="20" uuid="0cd2568d-4c72-484d-a9ad-a4bcee70f670"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<text><![CDATA[Status Pembeli           :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="62" width="145" height="20" uuid="357c57f3-21d3-4ccc-9abb-69ed6e6b69a6"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<text><![CDATA[Platform 	             :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="82" width="145" height="20" uuid="a137fb6c-5a4c-436d-b4c7-564037adde5f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<text><![CDATA[Genre Game              :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="102" width="145" height="20" uuid="5cb46146-1626-474b-b772-3d78508fa8e3"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<text><![CDATA[Judul Game               :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="122" width="145" height="20" uuid="27659595-7d8c-4d5b-9061-22caa7a360a5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<text><![CDATA[Harga Game              :]]></text>
+			</staticText>
+			<line>
+				<reportElement x="25" y="141" width="500" height="1" uuid="392572b3-c3d8-4350-946b-039f01045922"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="408" y="22" width="129" height="20" uuid="4549b6fa-aece-452b-a15c-20c45a7ac3d3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_pembeli}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="425" y="42" width="100" height="20" uuid="a5c22cff-8617-4d20-9936-0e9e15fe51ed"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{status_pembeli}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="425" y="62" width="100" height="20" uuid="4b690770-e7ae-45d8-8964-ff36bbcc4406"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{platform}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="425" y="82" width="100" height="20" uuid="b16e1e25-dc33-4eaa-9f66-d4e866f30451"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{genre_game}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="408" y="102" width="129" height="20" uuid="9792e2b5-462c-4766-977b-10c5abf593dc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{judul_game}]]></textFieldExpression>
+			</textField>
+			<textField pattern="Rp # , ##0">
+				<reportElement x="425" y="122" width="100" height="20" uuid="74e7b77f-70ab-414c-89a0-691ba2def690"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{harga_game}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="25" y="154" width="145" height="20" uuid="836413f0-744d-45b6-a51c-d332ecedb31d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<text><![CDATA[Diskon Belanja   	    :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="174" width="145" height="20" uuid="d79cedb8-98fc-4bf1-919d-671fb90d6bf3"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<text><![CDATA[Cashback Pembelian   :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="194" width="145" height="20" uuid="f7b5bfdd-7c79-4b9d-b0f4-e53f03fb545b"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<text><![CDATA[Diskon Tambahan      :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="214" width="145" height="20" uuid="db81343a-4b1f-4c1d-8b89-3fd741c0b1e5"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<text><![CDATA[PPN                          :]]></text>
+			</staticText>
+			<line>
+				<reportElement x="25" y="234" width="500" height="1" uuid="cd2d8ce1-7dd6-4f64-9493-661e10ad8cad"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="222" y="251" width="136" height="20" uuid="bb760a74-9763-42a5-b42c-e56b80d7941c"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<text><![CDATA[Total Pembayaran   :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="271" width="136" height="20" uuid="aaf475f0-df3c-4833-a4de-6ee8797a9909"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<text><![CDATA[Jumlah Bayar         :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="291" width="136" height="20" uuid="5b6cd2d8-c9c2-49fb-b773-b209a52d83dd"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<text><![CDATA[Uang Kembalian     :]]></text>
+			</staticText>
+			<line>
+				<reportElement x="25" y="321" width="500" height="1" uuid="3da14a75-507b-4b30-8e59-7417eee59039"/>
+				<graphicElement>
+					<pen lineStyle="Solid"/>
+				</graphicElement>
+			</line>
+			<textField pattern="Rp # , ##0">
+				<reportElement x="425" y="154" width="100" height="20" uuid="de57e18a-5782-4ba5-8815-30ddb8896e94"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{diskon_belanja}]]></textFieldExpression>
+			</textField>
+			<textField pattern="Rp # , ##0">
+				<reportElement x="425" y="174" width="100" height="20" uuid="8748145a-c152-46a6-b66d-97978fb526b8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{cashback_pembelian}]]></textFieldExpression>
+			</textField>
+			<textField pattern="Rp # , ##0">
+				<reportElement x="425" y="194" width="100" height="20" uuid="a4646767-8845-469d-b7dd-cec71c5f7f4c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{diskon_tambahan}]]></textFieldExpression>
+			</textField>
+			<textField pattern="Rp # , ##0">
+				<reportElement x="425" y="215" width="100" height="20" uuid="c7b4f4e8-0e18-4ca6-a5d9-63dd0b2903eb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ppn}]]></textFieldExpression>
+			</textField>
+			<textField pattern="Rp # , ##0">
+				<reportElement x="425" y="251" width="100" height="20" uuid="faf2eea5-428b-4c61-900a-b925903789db"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{total_pembayaran}]]></textFieldExpression>
+			</textField>
+			<textField pattern="Rp # , ##0">
+				<reportElement x="425" y="271" width="100" height="20" uuid="3a17b892-7752-42e1-92be-4116cf23296a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{jumlah_bayar}]]></textFieldExpression>
+			</textField>
+			<textField pattern="Rp # , ##0">
+				<reportElement x="425" y="291" width="100" height="20" uuid="7e365091-8d2c-4460-9068-9eefb55e2fed"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{uang_kembalian}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="25" y="350" width="75" height="20" uuid="718be534-29f5-49c0-b251-cafa32ea3e15"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kasir,]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="370" width="86" height="20" uuid="967f91f7-c2bc-4722-a47c-392d54d0d2f3"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="14" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Kristian Abel ]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="82" splitType="Stretch">
+			<staticText>
+				<reportElement x="55" y="0" width="454" height="82" uuid="6c49e4f5-bd8f-4af5-9fbc-d1a61692bfa8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Tahoma" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TERIMA KASIH TELAH MELAKUKAN TRANSAKSI DI TOKO GAME "LANTERN RITE"]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="22" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="14" splitType="Stretch"/>
+	</summary>
+</jasperReport>
