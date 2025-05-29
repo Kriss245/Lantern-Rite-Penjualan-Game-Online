@@ -96,7 +96,7 @@
 - `src/` – Berisi kode program Java dan tampilan aplikasi
 - `src/laporan data konsumen` – Berisi file jasper report dari tampilan desain Cetak Nota dan Cetak Laporan
 - `dblanternrite` – Berisi contoh database untuk import ke MySQL  
-- `lib/` – File library `.jar` seperti `mysql-connector` dan jasper report 
+- `lib/` – File library `.jar` seperti `mysql-connector` dan `jasper report` 
 
 ---
 
