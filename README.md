@@ -56,35 +56,35 @@
 
 ## 📲 Contoh Tampilan Antarmuka
 
-<p align="center"><img src="https://imgur.com/8aLRecl.png" width="300"></p>
+<p align="center"><img src="https://imgur.com/8aLRecl.png" width="400"></p>
 <p align="center" style="font-size:10px; color:gray;">
 <em> Gambar 1. Tampilan isi data pelanggan, game, dan harga game </em>
 </p>
 
 <br><br>
 
-<p align="center"><img src="https://imgur.com/o3y1jJU.png" width="300"></p>
+<p align="center"><img src="https://imgur.com/o3y1jJU.png" width="400"></p>
 <p align="center" style="font-size:10px; color:gray;">
 <em> Gambar 2. Tampilan setelah perhitungan otomatis </em>
 </p>
 
 <br><br>
 
-<p align="center"><img src="https://imgur.com/t1SRXCf.png" width="300"></p>
+<p align="center"><img src="https://imgur.com/t1SRXCf.png" width="400"></p>
 <p align="center" style="font-size:10px; color:gray;">
 <em> Gambar 3. Tampilan setelah tambah data ke dalam database </em>
 </p>
 
 <br><br>
 
-<p align="center"><img src="https://imgur.com/CQfeNYb.png" width="300"></p>
+<p align="center"><img src="https://imgur.com/CQfeNYb.png" width="400"></p>
 <p align="center" style="font-size:10px; color:gray;">
 <em> Gambar 4. Tampilan cetak nota setiap pembelian berdasarkan ID yang dipilih </em>
 </p>
 
 <br><br>
 
-<p align="center"><img src="https://imgur.com/3GORueK.png" width="300"></p>
+<p align="center"><img src="https://imgur.com/3GORueK.png" width="400"></p>
 <p align="center" style="font-size:10px; color:gray;">
 <em> Gambar 5. Tampilan cetak laporan seluruh transaksi yang ada </em>
 </p>
