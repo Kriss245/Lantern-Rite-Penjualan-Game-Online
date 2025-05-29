@@ -1,12 +1,6 @@
 # 🎮 Lantern Rite - Penjualan Game Online
 
-**Lantern Rite** adalah aplikasi kasir penjualan game online berbasis desktop yang dikembangkan menggunakan Java (NetBeans IDE) dan MySQL. Aplikasi ini dirancang untuk menyederhanakan proses transaksi dengan berbagai fitur otomatis, seperti diskon belanja, cashback pembelian, diskon tambahan, perhitungan PPN, pencetakan nota, dan laporan penjualan.
-
----
-
-## 🧾 Deskripsi
-
-Aplikasi ini cocok digunakan oleh toko game online atau digital store untuk mengelola penjualan dengan efisien. Seluruh perhitungan dan pencatatan transaksi dilakukan secara otomatis, dan laporan penjualan dapat dicetak untuk keperluan dokumentasi atau evaluasi bisnis.
+**Lantern Rite** adalah aplikasi kasir penjualan game online berbasis desktop yang dikembangkan menggunakan Java (NetBeans IDE) dan MySQL. Aplikasi ini dirancang untuk menyederhanakan proses transaksi dengan berbagai fitur otomatis, seperti diskon belanja, cashback pembelian, diskon tambahan, perhitungan PPN, pencetakan nota, dan laporan penjualan. Aplikasi ini cocok digunakan oleh toko game online atau digital store untuk mengelola penjualan dengan efisien. Seluruh perhitungan dan pencatatan transaksi dilakukan secara otomatis, dan laporan penjualan dapat dicetak untuk keperluan dokumentasi atau evaluasi bisnis.
 
 ---
 
@@ -27,7 +21,6 @@ Aplikasi ini cocok digunakan oleh toko game online atau digital store untuk meng
 ## 🛠 Teknologi yang Digunakan
 
 - Java (NetBeans IDE)  
-- Java Swing (GUI Desktop)  
 - MySQL (sebagai database utama)  
 - JasperReports (untuk cetak nota dan laporan)  
 - JDBC (Java Database Connectivity)
@@ -61,7 +54,7 @@ Aplikasi ini cocok digunakan oleh toko game online atau digital store untuk meng
 ## 📂 Struktur Proyek (Umum)
 
 - `src/` – Berisi kode program Java dan tampilan aplikasi
-- - `src/laporan data konsumen` – Berisi file jasper report dari tampilan desain Cetak Nota dan Cetak Laporan
+- `src/laporan data konsumen` – Berisi file jasper report dari tampilan desain Cetak Nota dan Cetak Laporan
 - `dblanternrite` – Berisi contoh database untuk import ke MySQL  
 - `lib/` – File library `.jar` seperti `mysql-connector` dan jasper report 
 - `assets/` – (opsional) Gambar atau ikon aplikasi  
