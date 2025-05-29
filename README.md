@@ -60,10 +60,10 @@ Aplikasi ini cocok digunakan oleh toko game online atau digital store untuk meng
 
 ## 📂 Struktur Proyek (Umum)
 
-- `src/` – Kode program Java dan tampilan aplikasi  
-- `dblanternrite` – Berisi file SQL (`lantern_rite_db.sql`) untuk import ke MySQL  
-- `laporan/` – Template laporan atau nota (jika menggunakan JasperReports)  
-- `lib/` – File `.jar` seperti `mysql-connector`  
+- `src/` – Berisi kode program Java dan tampilan aplikasi
+- - `src/laporan data konsumen` – Berisi file jasper report dari tampilan desain Cetak Nota dan Cetak Laporan
+- `dblanternrite` – Berisi contoh database untuk import ke MySQL  
+- `lib/` – File library `.jar` seperti `mysql-connector` dan jasper report 
 - `assets/` – (opsional) Gambar atau ikon aplikasi  
 
 ---
