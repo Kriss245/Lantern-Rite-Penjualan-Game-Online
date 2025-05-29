@@ -1,3 +1,5 @@
+<p align="center"><img src="https://imgur.com/v87p5Ks.png" width="500"></p>
+
 # 🎮 Lantern Rite - Penjualan Game Online
 
 > **Lantern Rite** adalah aplikasi kasir penjualan game online berbasis desktop yang dikembangkan menggunakan Java (NetBeans IDE) dan MySQL. Aplikasi ini dirancang untuk menyederhanakan proses transaksi dengan berbagai fitur otomatis, seperti diskon belanja, cashback pembelian, diskon tambahan, perhitungan PPN, pencetakan nota, dan laporan penjualan. Aplikasi ini cocok digunakan oleh toko game online atau digital store untuk mengelola penjualan dengan efisien. Seluruh perhitungan dan pencatatan transaksi dilakukan secara otomatis, dan laporan penjualan dapat dicetak untuk keperluan dokumentasi atau evaluasi bisnis.
@@ -51,13 +53,50 @@
 
 ---
 
+
+## 📲 Contoh Tampilan Antarmuka
+
+<p align="center"><img src="https://imgur.com/8aLRecl.png" width="300"></p>
+<p align="center" style="font-size:10px; color:gray;">
+<em> Gambar 1. Tampilan isi data pelanggan, game, dan harga game </em>
+</p>
+
+<br><br>
+
+<p align="center"><img src="https://imgur.com/o3y1jJU.png" width="300"></p>
+<p align="center" style="font-size:10px; color:gray;">
+<em> Gambar 2. Tampilan setelah perhitungan otomatis </em>
+</p>
+
+<br><br>
+
+<p align="center"><img src="https://imgur.com/t1SRXCf.png" width="300"></p>
+<p align="center" style="font-size:10px; color:gray;">
+<em> Gambar 3. Tampilan setelah tambah data ke dalam database </em>
+</p>
+
+<br><br>
+
+<p align="center"><img src="https://imgur.com/CQfeNYb.png" width="300"></p>
+<p align="center" style="font-size:10px; color:gray;">
+<em> Gambar 4. Tampilan cetak nota setiap pembelian berdasarkan ID yang dipilih </em>
+</p>
+
+<br><br>
+
+<p align="center"><img src="https://imgur.com/3GORueK.png" width="300"></p>
+<p align="center" style="font-size:10px; color:gray;">
+<em> Gambar 5. Tampilan cetak laporan seluruh transaksi yang ada </em>
+</p>
+
+---
+
 ## 📂 Struktur Proyek (Umum)
 
 - `src/` – Berisi kode program Java dan tampilan aplikasi
 - `src/laporan data konsumen` – Berisi file jasper report dari tampilan desain Cetak Nota dan Cetak Laporan
 - `dblanternrite` – Berisi contoh database untuk import ke MySQL  
 - `lib/` – File library `.jar` seperti `mysql-connector` dan jasper report 
-- `assets/` – (opsional) Gambar atau ikon aplikasi  
 
 ---
 
