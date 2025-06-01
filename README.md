@@ -1,4 +1,4 @@
-<p align="center"><img src="https://imgur.com/MPTEwFI.png" width="500"></p>
+<p align="center"><img src="https://imgur.com/MPTEwFI.png" width="350"></p>
 
 # 🎮 Lantern Rite - Penjualan Game Online
 
